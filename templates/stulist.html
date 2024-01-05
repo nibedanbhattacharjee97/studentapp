@@ -1,0 +1,22 @@
+<html>
+<table class="table">
+    <thead>
+    <tr>
+    <th scope="col">STUDENT_ID</th>
+    <th scope="col">CONTACTABLE</th>
+    <th scope="col">CLASS_STARTED</th>
+    <th scope="col">AE_VERIFIED</th>
+    </tr>
+    </thead>
+    <tbody>
+        {% for stu in stus %}
+    <tr>
+    <td>{{ stu.STUDENT_ID }}</th>
+    <td>{{ stu.CONTACTABLE }}</td>
+    <td>{{ stu.CLASS_STARTED }}</td>
+    <td>{{ stu.AE_VERIFIED }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+    </html>
